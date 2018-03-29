@@ -13,13 +13,11 @@ public class Circle extends Shape {
     public double getPerimetr() {
 
         return 2 * Math.PI * getRadius();
-
     }
 
     public double getArea() {
 
         return Math.PI * (getRadius() * getRadius());
-
     }
 
     private double getRadius() {

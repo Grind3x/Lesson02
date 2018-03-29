@@ -10,7 +10,6 @@ public class Main {
         //Создаем тестовый треугольник
         Triangle triangle = new Triangle(pointA, pointB, pointC);
 
-
         //Тест круга
         //Задаем две точки для радиуса
         Point pointD = new Point(7,2);
