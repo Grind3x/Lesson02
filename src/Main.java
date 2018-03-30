@@ -18,14 +18,17 @@ public class Main {
         //Создаем тестовый круг
         Circle circle = new Circle(pointD, pointE);
 
-        Board.addFigure(triangle,1);
-        Board.addFigure(circle,2);
+        //Создаем новую доску
+        Board boardOne = new Board();
 
-        Board.boardInfo();
+        boardOne.addFigure(triangle,1);
+        boardOne.addFigure(circle,2);
 
+        System.out.println(boardOne.boardInfo());
 
-        Board.deleteFigure(1);
-        Board.boardInfo();
+        boardOne.deleteFigure(1);
+        System.out.println(boardOne.boardInfo());
+
 
     }
 }

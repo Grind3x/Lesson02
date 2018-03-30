@@ -1,42 +1,38 @@
+import java.util.Arrays;
+
 public class Board {
-    private static Shape[] board = new Shape[4];
+    private Shape[] board = new Shape[4];
 
     public Board() {
     }
 
-    public static void addFigure(Shape shape, int part) {
-        board[part] = shape;
+    public void addFigure(Shape shape, int part) {
+        if ((part >= 0) & (part < board.length)) {
+            board[part] = shape;
+        }
     }
 
-    public static void deleteFigure(int part) {
+    public void deleteFigure(int part) {
         board[part] = null;
     }
 
-    public static void boardInfo() {
+    public String boardInfo() {
         double area = 0;
+        for (Shape aBoard : board) {
 
-        System.out.println("Фигуры на доске:");
-        for (int i = 0; i < board.length; i++) {
-            System.out.println(board[i]);
-        }
-
-        for (int i = 0; i < board.length; i++) {
-
-            if (board[i] != null) {
-                area = area + board[i].getArea();
+            if (aBoard != null) {
+                area = area + aBoard.getArea();
             }
-
         }
-        System.out.printf("Общая площадь: %.2f%n%n", area);
+
+        return "Фигуры на доске:" + Arrays.toString(board) + '\n' + "Общая площадь: " + area;
     }
 
-    public static Shape[] getBoard() {
+    public Shape[] getBoard() {
         return board;
     }
 
-    public static void setBoard(Shape[] board) {
-        Board.board = board;
+    public void setBoard(Shape[] board) {
+        this.board = board;
     }
-
-
 }

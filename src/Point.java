@@ -10,6 +10,11 @@ public class Point {
         this.y = y;
     }
 
+    public static double getDiatence (Point pointOne, Point pointTwo) {
+        return Math.sqrt((pointTwo.getX() - pointOne.getX())*(pointTwo.getX() - pointOne.getX()) +
+                ((pointTwo.getY() - pointOne.getY())*(pointTwo.getY() - pointOne.getY())));
+    }
+
     public double getX() {
         return x;
     }

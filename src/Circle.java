@@ -21,8 +21,7 @@ public class Circle extends Shape {
     }
 
     private double getRadius() {
-        return Math.sqrt(((pointB.getX() - pointA.getX()) * (pointB.getX() - pointA.getX())) +
-                ((pointB.getY() - pointA.getY()) * (pointB.getY() - pointA.getY())));
+        return Point.getDiatence(pointA,pointB);
     }
 
     public Point getPointA() {
