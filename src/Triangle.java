@@ -13,7 +13,7 @@ public class Triangle extends Shape {
     }
 
     public double getPerimetr() {
-        return Point.getDiatence(pointA,pointB) + Point.getDiatence(pointA, pointC) + Point.getDiatence(pointB,pointC);
+        return pointA.getDistance(pointB) + pointA.getDistance(pointC) + pointB.getDistance(pointC);
     }
 
     public double getArea() {

@@ -10,9 +10,9 @@ public class Point {
         this.y = y;
     }
 
-    public static double getDiatence (Point pointOne, Point pointTwo) {
-        return Math.sqrt((pointTwo.getX() - pointOne.getX())*(pointTwo.getX() - pointOne.getX()) +
-                ((pointTwo.getY() - pointOne.getY())*(pointTwo.getY() - pointOne.getY())));
+    public  double getDistance(Point point) {
+        return Math.sqrt((point.getX() - this.getX())*(point.getX() - this.getX()) +
+                ((point.getY() - this.getY())*(point.getY() - this.getY())));
     }
 
     public double getX() {
