@@ -24,10 +24,10 @@ public class Main {
         boardOne.addFigure(triangle,1);
         boardOne.addFigure(circle,2);
 
-        System.out.println(boardOne.boardInfo());
+        System.out.println(boardOne);
 
         boardOne.deleteFigure(1);
-        System.out.println(boardOne.boardInfo());
+        System.out.println(boardOne);
 
 
     }

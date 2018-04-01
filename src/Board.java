@@ -16,7 +16,7 @@ public class Board {
         board[part] = null;
     }
 
-    public String boardInfo() {
+    public String toString() {
         double area = 0;
         for (Shape aBoard : board) {
 
