@@ -1,8 +1,8 @@
 public abstract class Shape {
 
-    abstract double getPerimetr();
+    public abstract double getPerimetr();
 
-    abstract double getArea();
+    public abstract double getArea();
 
 
     public Shape() {
